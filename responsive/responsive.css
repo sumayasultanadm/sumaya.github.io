@@ -1,0 +1,54 @@
+@media(max-width:992px){
+       .hero .row{
+           flex-direction: column;
+		   text-align: center;
+	   }
+
+	   .hero{
+		padding: 60px 0;
+	   }
+
+	   .hero .row .col{
+		padding-top: 50px;
+	}
+
+	.hero .row .col h2{
+		line-height: 1.3;
+		margin: 19px 0;
+	}
+
+     #navbar{
+		display: none;
+	 }
+
+    .show{
+		display: flex !important;
+        flex-direction: column;
+		background: #39588a;
+		position: fixed;
+		top: 90px;
+		left: 0;
+		right: 0;
+		padding: 25px;
+		line-height: 30px;
+		gap: 10px;
+		animation: manuAnimation 0.4s ease-in-out;
+	}
+    .header-section .container .row .navbar ul li a {
+		line-height: 2.5;
+	}
+
+	.fa-bars{
+	display: block;
+}
+}
+
+
+@keyframes manuAnimation {
+		from{
+			transform: translateY(-126%);
+		}
+		to{
+			transform: translateY(0%);
+		}
+	}
